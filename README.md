@@ -62,7 +62,7 @@ Peak Frequency: [value] Hz
 ## Development
 The prototype went through several iterations during the Imperial College Maker Challenge:
 
-![Initial setup](images/01_initial_setup.jpg)
+![Initial setup](images/01_initSetup.jpg)
 *Early breadboard prototype with Grove sound sensor*
 
 ![Iteration](images/02_iteration.jpg)
@@ -71,7 +71,7 @@ The prototype went through several iterations during the Imperial College Maker 
 ![Challenge poster](images/03_poster.jpg)
 *Imperial Maker Challenge poster with full technical documentation*
 
-![Final demo](images/04_final_demo.jpg)
+![Final demo](images/04_finalDemo.jpg)
 *Final prototype running live at the challenge, SerialPlot output visible on screen*
 
 
