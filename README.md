@@ -64,17 +64,19 @@ The prototype went through several iterations during the Imperial College Maker 
 
 <img src="images/01_initSetup.png" width="400">
 
-![Initial setup](images/01_initSetup.png)
-*Early breadboard prototype with Grove sound sensor*
+*^ Early breadboard prototype with Grove sound sensor*
 
-![Iteration](images/02_iteration.png)
-*Mid-development — switched to MAX4466, noted stethoscope as potential improvement*
+<img src="images/02_iteration.png" width="400">
 
-![Challenge poster](images/03_poster.png)
-*Imperial Maker Challenge poster with full technical documentation*
+*^ Mid-development — switched to MAX4466, noted stethoscope as potential improvement*
 
-![Final demo](images/04_finalDemo.png)
-*Final prototype running live at the challenge, SerialPlot output visible on screen*
+<img src="images/03_poster.png" width="400">
+
+*^ Imperial Maker Challenge poster with full technical documentation*
+
+<img src="images/04_finalDemo.png" width="400">
+
+*^ Final prototype running live at the challenge, SerialPlot output visible on screen*
 
 
 ## Known limitations (v1.0)
