@@ -62,9 +62,17 @@ Peak Frequency: [value] Hz
 ## Development
 The prototype went through several iterations during the Imperial College Maker Challenge:
 
-- **Initial setup**: Raspberry Pi Pico + Grove sound sensor on breadboard. basic signal capture
-- **Iteration**: Switched to MAX4466 for better amplification + shape; considered stethoscope attachment for improved acoustics; replaced breadboard jumper wires with hand-soldered connections for reliability
-- **Final prototype**: Dual output system (SerialPlotter + terminal alerts); dynamic calibration routine added
+![Initial setup](images/01_initial_setup.jpg)
+*Early breadboard prototype with Grove sound sensor*
+
+![Iteration](images/02_iteration.jpg)
+*Mid-development — switched to MAX4466, noted stethoscope as potential improvement*
+
+![Challenge poster](images/03_poster.jpg)
+*Imperial Maker Challenge poster with full technical documentation*
+
+![Final demo](images/04_final_demo.jpg)
+*Final prototype running live at the challenge, SerialPlot output visible on screen*
 
 
 ## Known limitations (v1.0)
