@@ -62,6 +62,8 @@ Peak Frequency: [value] Hz
 ## Development
 The prototype went through several iterations during the Imperial College Maker Challenge:
 
+<img src="images/01_initSetup.png" width="400">
+
 ![Initial setup](images/01_initSetup.png)
 *Early breadboard prototype with Grove sound sensor*
 
