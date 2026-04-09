@@ -85,3 +85,4 @@ The prototype went through several iterations during the Imperial College Maker 
 
 ## Dependencies  
 - [arduinoFFT](https://github.com/kosme/arduinoFFT) library
+- SerialPlot by hyOzd ([github.com/hyOzd/serialplot](https://github.com/hyOzd/serialplot)) for real-time frequency visualisation
