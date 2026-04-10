@@ -68,7 +68,7 @@ The prototype went through several iterations during the Imperial College Maker 
 
 <img src="images/02_iteration.png" width="400">
 
-*^ Mid-development — switched to MAX4466, noted stethoscope as potential improvement*
+*^ Mid-development — switched to MAX4466 and soldered components properly*
 
 <img src="images/03_poster.png" width="400">
 
