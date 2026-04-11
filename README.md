@@ -10,17 +10,6 @@ AsthmaVue is a prototype device that detects breathing abnormalities (coughs, wh
 Children with asthma often lack the knowledge and experience needed to gauge when their symptoms are worsening. AsthmaVue aims to help quantify that uncertainty by providing a low-cost, accessible monitoring device that detects abnormal breathing events (wheezes, coughs) in real time and triggers and alert before an asthma attack.
 
 
-## How it works
-1. A MAX4466 electret microphone amplifier, placed in contact with the user's chest or neck, captures audio from the user's breathing
-2. On startup, a **dynamic calibration** routine is initiated -- it takes a 20 readings as a baseline and automatically sets the detection threshold (average energy * 1.5) and noise floor (minimum energy * 1.2) to account for different environments
-3. Audio is sampled at **2000 Hz** with **256 samples** per window
-4. A **Hamming window** is applied before FFT to reduce spectral leakage at the edges of each sample window, in order to prevent false frequency peaks
-5. FFT analysis idetifies energy peaks within the **100-1000 Hz** detection range, based on [respiratory literature on asthmatic breathing patterns in adult males](https://www.sciencedirect.com/science/article/abs/pii/S0012369216389644) (as that was the most convincing data I could find at the time)
-6. A **moving average over 5 readings** smooths the energy signal to reduce noise-based false positives
-7. A wheeze/cough event is confirmed only after **3 consecutive detections** within the designated frequency range
-8. Alert is triggerd via one of the two output modes (see below)
-
-
 ## Hardware
 
 | Component | Purpose |
@@ -47,6 +36,15 @@ Peak Frequency: [value] Hz
 ```
 
 
+## Setup
+1. Gather the required components and follow the wiring diagram provided *(TBC)*
+2. Connect the board to a laptop/PC via USB Micro B
+3. Download `terminalAlert_asthmavue.ino` and upload to the board via Arduino IDE
+4. Place the microphone in contact with a user's throat or chest
+5. Breathe as normal and after the calibration has completed terminal alerts should be visible if wheezes or cough occur
+6. **(optional)** If visualisation is preferred, `serialplotter_asthmavue.ino` must be downloaded and uploaded to the board. Additionally, the SerialPlot software must be downloaded (which can be found in the dependencies section below)
+
+
 ## Signal processing summary
 | Parameter | Value |
 |---|---|
@@ -57,6 +55,17 @@ Peak Frequency: [value] Hz
 | Energy smoothing | Moving average (n=5) |
 | Consecutive detections required | 3 |
 | Threshold setting | Dynamic (calibrated on startup) |
+
+
+## How it works
+1. A MAX4466 electret microphone amplifier, placed in contact with the user's chest or neck, captures audio from the user's breathing
+2. On startup, a **dynamic calibration** routine is initiated -- it takes a 20 readings as a baseline and automatically sets the detection threshold (average energy * 1.5) and noise floor (minimum energy * 1.2) to account for different environments
+3. Audio is sampled at **2000 Hz** with **256 samples** per window
+4. A **Hamming window** is applied before FFT to reduce spectral leakage at the edges of each sample window, in order to prevent false frequency peaks
+5. FFT analysis idetifies energy peaks within the **100-1000 Hz** detection range, based on [respiratory literature on asthmatic breathing patterns in adult males](https://www.sciencedirect.com/science/article/abs/pii/S0012369216389644) (as that was the most convincing data I could find at the time)
+6. A **moving average over 5 readings** smooths the energy signal to reduce noise-based false positives
+7. A wheeze/cough event is confirmed only after **3 consecutive detections** within the designated frequency range
+8. Alert is triggerd via one of the two output modes (see above)
 
 
 ## Development
