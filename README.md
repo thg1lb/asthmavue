@@ -7,7 +7,7 @@ AsthmaVue is a prototype device that detects breathing abnormalities (coughs, wh
 ## The problem
 > [“Nearly 250,000 people die prematurely each year from asthma, and most of all these deaths are preventable. Globally, death rates from asthma in children range from 0 to 0.7 per 100,000 people”](https://pmc.ncbi.nlm.nih.gov/articles/PMC7052318/#:~:text=Nearly%20250%2C000%20people%20die%20prematurely,per%20100%2C000%20people%20%5B2%5D).
 
-Children with asthma often lack the knowledge and experience needed to gauge when their symptoms are worsening. AsthmaVue aims to help quantify that uncertainty by providing a low-cost, accessible monitoring device that detects abnormal breathing events (wheezes, coughs) in real time and triggers and alert before an asthma attack.
+Children with asthma often lack the knowledge and experience needed to gauge when their symptoms are worsening. AsthmaVue aims to help quantify that uncertainty by providing a low-cost, accessible monitoring device that detects abnormal breathing events (wheezes, coughs) in real time and triggers and alert before an asthma attack. It first calibrates for a short period using the user's own breathing patterns. Then, breathing sounds captured by the microphone are converted into frequency data using FFT and abnormal breathing patterns within adjusted frequency thresholds trigger an alert.
 
 
 ## Hardware
